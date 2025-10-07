@@ -2,30 +2,40 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>God of Meme</title>
   <style>
     body {
-      background-color: #6a4481; /* 배경색 변경 */
-      color: #ffffff; /* 글자색 흰색으로 변경하면 대비가 좋아요 */
+      background-color: #6a4481; /* 배경색 */
+      color: #ffffff; /* 글자색 */
       margin: 0;
       font-family: Arial, sans-serif;
+      
+      /* Flexbox로 중앙 배치 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* 세로 중앙 */
+      align-items: center;     /* 가로 중앙 */
+      min-height: 100vh;       /* 화면 전체 높이 */
+    }
+
+    header, footer {
+      text-align: center;
+    }
+
+    img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px; /* 살짝 둥근 모서리 */
     }
   </style>
 </head>
 <body>
   <header>
-    <h1 style="text-align:center;"></h1>
+    <h1>God of Meme</h1>
   </header>
 
   <!-- 메인 이미지 -->
   <div>
     <img src="https://raw.githubusercontent.com/GodofMeme0/GodofMeme/main/main.jpg" 
-         alt="Main Image" 
-         style="width:100%; max-width:800px; display:block; margin:auto;">
-  </div>
-
-  <footer style="text-align:center; margin-top:50px;">
-    <p></p>
-  </footer>
-</body>
-</html>
+         alt=
