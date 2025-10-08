@@ -4,13 +4,22 @@
   <meta charset="UTF-8">
   <title>God of Meme</title>
   <style>
+    /* 🔹 1. 폰트 등록 */
+    @font-face {
+      font-family: 'GodOfMeme';
+      src: url('fonts/GodOfMeme.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* 🔹 2. 기본 스타일 */
     body {
       background-color: #6a4481; /* 배경색 */
       color: #ffffff; /* 글자색 */
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'GodOfMeme', Arial, sans-serif; /* ← 등록한 폰트 적용 */
       
-      /* Flexbox로 중앙 배치 */
+      /* 중앙 정렬 */
       display: flex;
       flex-direction: column;
       justify-content: center; /* 세로 중앙 */
@@ -27,13 +36,20 @@
       max-width: 800px;
       width: 100%;
       height: auto;
-      border-radius: 10px; /* 살짝 둥근 모서리 */
+      border-radius: 10px; /* 둥근 모서리 */
       margin: 20px 0;
     }
 
     h1 {
       font-size: 3em;
       margin: 0;
+      letter-spacing: 1px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+      font-size: 1.2em;
     }
 
     footer {
@@ -44,15 +60,12 @@
 </head>
 <body>
   <header>
-    <h1> </h1>
+    <h1>God of Meme</h1>
   </header>
 
-  <!-- 메인 이미지 -->
+  <!-- 메인 콘텐츠 -->
   <div>
-    <a href="God_of_Meme_Whitepaper.pdf" target="_blank" style="color: #fff; text-decoration: underline;">
-  📄 View Whitepaper
-</a>
-
+    <a href="God_of_Meme_Whitepaper.pdf" target="_blank">📄 View Whitepaper</a>
   </div>
 
   <footer>
