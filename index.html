@@ -14,26 +14,30 @@
     body {
       background-color: #6a4481;
       color: #ffffff;
-      margin: 0;
       font-family: 'GodOfMeme', Arial, sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
       text-align: center;
+      
+      min-height: 100vh;
+      margin: 0;
+      padding-bottom: 70px; 
+      position: relative;
     }
 
     h1 {
-      font-size: 3em;
-      margin-bottom: 40px;
+      font-size: 120pt; 
+      /* 👇 이 값을 120px로 변경했습니다. */
+      margin-bottom: 120px; 
     }
-
+    
     .button-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px; /* 버튼 간 간격 */
+      gap: 15px;
     }
 
     a.button {
@@ -41,7 +45,7 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      width: 260px; /* 버튼 너비 */
+      width: 260px;
       padding: 12px 20px;
       background-color: #8e5bb7;
       color: white;
@@ -65,37 +69,39 @@
     }
 
     footer {
-      margin-top: 50px;
+      position: fixed; 
+      bottom: 5%; 
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 15px 0; 
       font-size: 0.9em;
       color: #dddddd;
+      text-align: center;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1><font size=6>God of Meme</font><br><br></h1>
+    <h1>God of Meme</h1>
   </header>
 
   <div class="button-container">
-    <!-- Whitepaper -->
     <a href="whitepaper/God_of_Meme_Whitepaper.pdf" target="_blank" class="button">
       📄 View Whitepaper
     </a>
 
-    <!-- PancakeSwap -->
     <a href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0x4e8B125B382E21B9D668a8dc90f171e4f8F1a9bD&chain=bsc" 
-       target="_blank" class="button">
+      target="_blank" class="button">
       <img src="images/pancakeswap.svg" alt="PancakeSwap Logo">
       Go to PancakeSwap
     </a>
 
-    <!-- Telegram -->
     <a href="https://t.me/God_Of_Meme_BSC" target="_blank" class="button">
       <img src="images/telegram.svg" alt="Telegram Logo">
       Go to Telegram
     </a>
 
-    <!-- X (Twitter) -->
     <a href="https://x.com/God_of_Meme_BSC" target="_blank" class="button">
       <img src="images/x-logo.svg" alt="X Logo">
       Go to X (Twitter)
