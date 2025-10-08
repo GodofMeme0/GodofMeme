@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>God of Meme</title>
   <style>
-    /* 🔹 1. 폰트 등록 */
     @font-face {
       font-family: 'GodOfMeme';
       src: url('fonts/GodOfMeme.woff2') format('woff2');
@@ -12,52 +11,52 @@
       font-style: normal;
     }
 
-    /* 🔹 2. 기본 스타일 */
     body {
-      background-color: #6a4481; /* 배경색 */
-      color: #ffffff; /* 글자색 */
+      background-color: #6a4481;
+      color: #ffffff;
       margin: 0;
-      font-family: 'GodOfMeme', Arial, sans-serif; /* ← 등록한 폰트 적용 */
-      
-      /* 중앙 정렬 */
+      font-family: 'GodOfMeme', Arial, sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center; /* 세로 중앙 */
-      align-items: center;     /* 가로 중앙 */
-      min-height: 100vh;       /* 화면 전체 높이 */
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       text-align: center;
-    }
-
-    header, footer {
-      margin: 20px 0;
-    }
-
-    img {
-      max-width: 800px;
-      width: 100%;
-      height: auto;
-      border-radius: 10px; /* 둥근 모서리 */
-      margin: 20px 0;
     }
 
     h1 {
       font-size: 3em;
-      margin: 0;
-      letter-spacing: 1px;
+      margin-bottom: 20px;
     }
 
-    a {
-      color: #fff;
-      text-decoration: underline;
-      font-size: 1.2em;
-    }
-
-    a:hover {
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px;
+      padding: 12px 25px;
+      background-color: #8e5bb7;
+      color: white;
+      border-radius: 8px;
       text-decoration: none;
-      color: #e0caff;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #a06fd1;
+      transform: scale(1.05);
+    }
+
+    a.button img {
+      width: 22px;
+      height: 22px;
+      vertical-align: middle;
     }
 
     footer {
+      margin-top: 40px;
       font-size: 0.9em;
       color: #dddddd;
     }
@@ -68,10 +67,30 @@
     <h1>God of Meme</h1>
   </header>
 
-  <!-- 🔹 메인 콘텐츠 -->
   <div>
-    <a href="whitepaper/God_of_Meme_Whitepaper.pdf" target="_blank">
+    <!-- Whitepaper -->
+    <a href="whitepaper/God_of_Meme_Whitepaper.pdf" target="_blank" class="button">
       📄 View Whitepaper
+    </a>
+    <br>
+
+    <!-- PancakeSwap -->
+    <a href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0x4e8B125B382E21B9D668a8dc90f171e4f8F1a9bD&chain=bsc" 
+       target="_blank" class="button">
+      <img src="images/pancakeswap.svg" alt="PancakeSwap Logo">
+      Go to PancakeSwap
+    </a>
+
+    <!-- Telegram -->
+    <a href="https://t.me/God_Of_Meme_BSC" target="_blank" class="button">
+      <img src="images/telegram.svg" alt="Telegram Logo">
+      Go to Telegram
+    </a>
+
+    <!-- X (Twitter) -->
+    <a href="https://x.com/God_of_Meme_BSC" target="_blank" class="button">
+      <img src="images/x-logo.svg" alt="X Logo">
+      Go to X (Twitter)
     </a>
   </div>
 
